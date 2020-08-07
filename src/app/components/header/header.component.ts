@@ -19,6 +19,11 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   private width: number;
   private scroll: number;
   public toggleMenuItem = false;
+  public rutas = [
+    { name: 'Inicio',   path: '/home' },
+    { name: 'Tienda',   path: '/shop' },
+    { name: 'Contacto', path: '/contact' }
+  ];
 
   // tslint:disable-next-line:ban-types
   constructor(private renderer: Renderer2, @Inject(PLATFORM_ID) private platformId: Object) { }
