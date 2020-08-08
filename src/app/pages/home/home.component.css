@@ -1,0 +1,10 @@
+.card{
+    margin: 1rem;
+    padding: 0,5rem;
+}
+.card:hover{    
+        background: #ddd;
+        text-decoration: none;
+        color: #555;
+    
+}
