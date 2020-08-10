@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { ErrorComponent } from './components/error/error.component';
 import { LayoutComponent } from './layout/layout.component';
 
-
 const routes: Routes = [
   {
     path: '', component: LayoutComponent, children: [
@@ -20,7 +19,7 @@ const routes: Routes = [
         loadChildren: () => import('./pages/contact/contact.module').then(m => m.ContactModule)
       },
       {
-        path: '**', redirectTo: '/auth', pathMatch: 'full'
+        path: '', redirectTo: '/home', pathMatch: 'full'
       }
     ]
   },
