@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
+
 
 @Component({
   selector: 'app-recover',
@@ -7,9 +9,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecoverComponent implements OnInit {
 
-  constructor() { }
+  public checkoutForm = this.formBuilder.group({
+    email: ''
+  });
+      
+  constructor(private formBuilder: FormBuilder) {
+    
+    
+  }
+  
 
   ngOnInit(): void {
+    
   }
 
+  onSubmit() {
+    // Process checkout data here
+    
+    if (this.checkoutForm.valid) {
+      console.log('Revisar Email', this.checkoutForm.value);
+    this.checkoutForm.reset();
+    }else{
+      console.log('El email no está registrado');
+    }
+  }
+  
 }
+
+
+  
