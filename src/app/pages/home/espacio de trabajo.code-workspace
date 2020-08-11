@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\.."
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\..\\PerdiDocs\\PerdiDocs"
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\..\\..\\..\\..\\xampp\\htdocs\\webservice"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "webservice"
+	}
+}

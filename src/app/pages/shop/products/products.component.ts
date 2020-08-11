@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ProductsComponent implements OnInit {
 
   productos = [{
+    tallas: [9,8,6,7],
+    colores: ['red','yellow','blue'],
     oferta: true,
     img: "",
     Titulo: "Mike",
