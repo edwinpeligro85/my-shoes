@@ -19,6 +19,14 @@ const routes: Routes = [
         loadChildren: () => import('./pages/contact/contact.module').then(m => m.ContactModule)
       },
       {
+        path: 'perfil',
+        loadChildren: () => import('./pages/perfil/perfil.module').then(m => m.PerfilModule)
+      },
+      {
+        path: 'search-results',
+        loadChildren: () => import('./pages/serch-results/serch-results.module').then(m => m.SerchResultsModule)
+      },
+      {
         path: 'checkout',
         loadChildren: () => import('./checkout/checkout.module').then(m => m.CheckoutModule)
       },
@@ -30,10 +38,6 @@ const routes: Routes = [
   {
     path: 'auth',
     loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
-  },
-  {
-  path: 'pages',
-    loadChildren: () => import('./pages/contact/contact.module').then(m => m.ContactModule)
   },
   {
     path: '**', component: ErrorComponent

@@ -1,0 +1,23 @@
+body{padding-top:30px;}
+
+.glyphicon {  margin-bottom: 10px;margin-right: 10px;}
+
+small {
+display: block;
+line-height: 1.428571429;
+color: #999;
+}
+
+.container{
+    margin-top: 12rem;
+}
+.btn-red{
+    background: #DE6262;
+    float: right;
+    
+  
+}
+h2{
+    color:#DE6262;
+    text-align: center;
+}
