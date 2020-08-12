@@ -19,6 +19,10 @@ const routes: Routes = [
         loadChildren: () => import('./pages/contact/contact.module').then(m => m.ContactModule)
       },
       {
+        path: 'checkout',
+        loadChildren: () => import('./checkout/checkout.module').then(m => m.CheckoutModule)
+      },
+      {
         path: '', redirectTo: '/home', pathMatch: 'full'
       }
     ]
@@ -26,6 +30,10 @@ const routes: Routes = [
   {
     path: 'auth',
     loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
+  },
+  {
+  path: 'pages',
+    loadChildren: () => import('./pages/contact/contact.module').then(m => m.ContactModule)
   },
   {
     path: '**', component: ErrorComponent

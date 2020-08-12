@@ -1,0 +1,13 @@
+.margin-top-12{
+    margin-top: 12rem;
+}
+.nav-link.active, button{
+    background-color: #DE6262;
+    color: white;
+}
+.nav-link{
+    color: #DE6262;
+}
+.panel{
+    margin-top: 12rem;
+}
