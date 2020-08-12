@@ -1,1 +1,180 @@
-<p>pay works!</p>
+<div class="container margin-top-12">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <div class="container">
+                <div class="row">
+                     <form>
+                        <div class="form-row">
+                            
+                            <div class="form-group col-12 col-sm-6">
+                                <label>Nombre</label>
+                                <input type="text" class="form-control" id="nombre">
+                            </div>
+        
+                            <div class="form-group col-12 col-sm-6">
+                                <label>Apellido</label>
+                                <input type="text" class="form-control" id="apellido">
+                            </div>
+        
+                            <div class=" form-group col-12 col-sm-6">
+                                <label for="inputState">País</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Elegir...</option>
+                                    <option>España</option>
+                                    <option>Colombia</option>
+                                    <option>Estados Unidos</option>
+                                    <option>Argentina</option>
+                                    <option>Brasil</option>
+                                    <option>Francia</option>
+                                    <option>Alemania</option>
+                                </select>
+                            </div>
+        
+                            <div class=" form-group col-12 col-sm-6">
+                                <label>Ciudad</label>
+                                <input type="text" class="form-control" id="ciudad">
+                            </div>
+        
+                            <div class="col-12 col-sm-8 col-md-6">
+        
+                                <label>Email</label>
+                                <input type="email" class="form-control" id="Email">
+                            </div>
+                            <div class=" form-group col-12 col-sm-4 col-md-6">
+                                <label>Teléfono</label>
+                                <input type="tel" class="form-control" id="telefono">
+                            </div>
+        
+                            <div class=" form-group col-12">
+                                <label>Dirección</label>
+                                <input type="text" class="form-control" id="Dirección">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <article class="card">
+                <div class="card-body p-5">
+
+                    <ul class="nav bg-light nav-pills rounded nav-fill mb-3" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#nav-tab-card">
+                                <i class="fa fa-credit-card"></i>
+                                Tarjeta de credito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#nav-tab-paypal">
+                                <i class="fab fa-paypal"></i>
+                                Paypal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#nav-tab-bank">
+                                <i class="fa fa-university"></i>
+                                Transferencia bancaria</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="nav-tab-card">
+                            <p class="alert d-none alert-success">Texto de error!!</p>
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="username">Nombre completo (En la tarjeta)</label>
+                                    <input type="text" class="form-control" name="username" placeholder="" required>
+                                </div>
+
+                                <!-- form-group.// -->
+                                <div class="form-group">
+                                    <label for="cardNumber">Numero de tarjeta</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="cardNumber" placeholder="" required>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text text-muted">
+                                                <i class="fab fa-cc-visa"></i>
+                                                <i class="fab fa-cc-amex"></i>
+                                                <i class="fab fa-cc-mastercard"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- form-group.// -->
+
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label>
+                                                <span class="hidden-xs">Expiración</span>
+                                            </label>
+                                            <div class="input-group">
+                                                <input type="number" class="form-control" placeholder="MM" name="">
+                                                <input type="number" class="form-control" placeholder="YY" name="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label data-toggle="tooltip" title="" data-original-title="3 digits code on back side of the card">CVV
+                                                <i class="fa fa-question-circle"></i>
+                                            </label>
+                                            <input type="number" class="form-control" required="">
+                                        </div>
+                                        <!-- form-group.// -->
+                                    </div>
+                                </div>
+                                <!-- row.// -->
+                                <button class="subscribe btn btn-block" type="button">
+                                    Confirmar
+                                </button>
+                            </form>
+                        </div>
+                        <!-- tab-pane.// -->
+                        <div class="tab-pane fade" id="nav-tab-paypal">
+                            <p>Paypal es la forma más fácil de pagar en línea</p>
+                            <p>
+                                <button type="button" class="btn">
+                                    <i class="fab fa-paypal"></i>
+                                    Ir a paypal
+                                </button>
+                            </p>
+                            <p>
+                                <strong>Nota:</strong>
+                                Los pagos en paypal son mejores que en Nequi!.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="nav-tab-bank">
+                            <p>Detalles de cuenta bancaria</p>
+                            <dl class="param">
+                                <dt>BANCO:
+                                </dt>
+                                <dd>
+                                    DAVIVIENDA</dd>
+                            </dl>
+                            <dl class="param">
+                                <dt>Numero de Cuenta:
+                                </dt>
+                                <dd>
+                                    12345678912345</dd>
+                            </dl>
+                            <dl class="param">
+                                <dt>IBAN:
+                                </dt>
+                                <dd>
+                                    123456789</dd>
+                            </dl>
+                            <p>
+                                <strong>Nota:</strong>
+                                El banco no se hace responsable por pagos a terceros...
+                            </p>
+                        </div>
+                        <!-- tab-pane.// -->
+                    </div>
+                    <!-- tab-content .// -->
+
+                </div>
+                <!-- card-body.// -->
+            </article>
+        </div>
+    </div>
+</div>

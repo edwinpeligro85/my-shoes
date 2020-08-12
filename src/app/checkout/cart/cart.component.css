@@ -70,10 +70,23 @@
 .card-header{
     background: #DE6262;
 }
+.btn-red{
+    background: #DE6262;
+}
 .btn-outline-info{
     background: #F6F6F6;
     
 }
 .btn-outline-info:hover{
     color: #000;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
