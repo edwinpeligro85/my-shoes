@@ -8,7 +8,9 @@
 }
 
 /*product info */
-
+.card{
+  margin-right: 10rem;
+}
 h1 {
   color: #ff6d39;
   font-family: "muli";
